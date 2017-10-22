@@ -27,8 +27,7 @@ class RechargeList(APIView):
                    return Response("Not Sufficient Balance")
                else:
                    return Response(
-                       "Recharge Successful And Your Remaining Account Balance in your wallet is" + " Rs " + str(
-                           result))
+                       "Recharge Successful And Your Remaining Account Balance in your wallet is" + " Rs " + str(result))
 
            else:
                return Response("No User with This First Name ! Please type correct First Name")
