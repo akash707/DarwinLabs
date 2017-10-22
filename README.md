@@ -1,6 +1,6 @@
 # DarwinLabs
 <br>
-<h2>Mobile Recharge API Using Paytm</h2> 
+<h2>Mobile Phones Recharge API Using Paytm</h2> 
 
 <h4>Python Application that provide REST API to recharge Mobile Phones</h4>
 
