@@ -5,4 +5,4 @@ class RechargeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model=Recharge
-        fields=('first_name','last_name','account_balance')
+        fields = ('first_name', 'last_name', 'account_balance')
