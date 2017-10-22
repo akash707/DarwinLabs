@@ -21,12 +21,14 @@ class RechargeList(APIView):
            Recharge1=Recharge.objects.filter(first_name=user)
            serializer = RechargeSerializer(Recharge1, many=True)
 
-           if(len(Recharge1)>0):
-             result=serializer.data[0]["account_balance"]-int(recharge_amount)
-             if(serializer.data[0]["account_balance"]<int(recharge_amount)):
-               return Response("Not Sufficient Balance")
-             else:
-               return Response("Recharge Successful And Your Remaining Account Balance in your wallet is"+" Rs " + str(result))
+           if (len(Recharge1) > 0):
+               result = serializer.data[0]["account_balance"] - int(recharge_amount)
+               if (serializer.data[0]["account_balance"] < int(recharge_amount)):
+                   return Response("Not Sufficient Balance")
+               else:
+                   return Response(
+                       "Recharge Successful And Your Remaining Account Balance in your wallet is" + " Rs " + str(
+                           result))
 
            else:
                return Response("No User with This First Name ! Please type correct First Name")
