@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    <img src="http://darwinlabs.io/images/logo-1.png" width="100%"  alt="">
+  </a>
+
+    <a href="/mobile" <button class="btn btn-success">Recharge</button></a>
+
+
+</nav>
+
+
+<body>
+
+
+<h1 align="center" style="margin-top:2%">
+  Register Yourself For Recharge And Money To Your Wallet
+</h1>
+
+
+<div align="center" class="alert alert-danger" role="alert" style="margin-top:2%">
+    <b>If you are  an exisiting user ! Please Click Here to recharge your mobile </b>
+    <a href="/mobile" <button style="margin-left:2%" class="btn btn-success">Recharge</button></a>
+
+</div>
+
+
+
+<form method="POST" class="col-sm-6" style="margin-top:2%">
+
+    {% csrf_token %}
+
+<div class="form-group" style="float:right">
+
+    {% for field in form %}
+
+        <label for="input"><b>{{ field.label }}</b></label>
+        <div><b>{{ field }}</b></div>
+
+
+     {% endfor %}
+<br>
+<br>
+<button class="btn btn-primary" type="submit">Submit</button>
+</div>
+
+
+
+</form>
+
+</body>
+</html>

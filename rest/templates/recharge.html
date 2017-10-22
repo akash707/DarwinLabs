@@ -1,0 +1,70 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    <img src="http://darwinlabs.io/images/logo-1.png" width="100%"  alt="">
+  </a>
+
+     <a href="/register" <button class="btn btn-success">Register</button></a>
+
+
+</nav>
+
+
+<body>
+
+
+<h1 align="center" style="margin-top:1%">
+ Recharge Your Mobile Here ! Fill All The Details
+</h1>
+
+
+<div align="center" class="alert alert-danger" role="alert" style="margin-top:1%">
+    <b>If you are not an exisiting user ! Please Click Here to register yourself </b>
+    <a href="/register" <button style="margin-left:2%" class="btn btn-success">Register</button></a>
+
+</div>
+
+<div class="row" style="margin-top:3%">
+
+<div class="col-sm-3">
+
+</div>
+
+<form class="col-sm-6" method="GET" action="/recharge">
+
+    <div class="form-group">
+        <label for="exampleInputEmail1"><b>First Name</b></label>
+    <input type="text" required name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name ">
+<small id="emailHelp"  class="form-text text-muted">Please enter your first name that you choose during the time of registration</small>
+
+  </div>
+
+  <div class="form-group">
+      <label for="exampleInputEmail1"><b>Mobile Number</b></label>
+    <input type="tel" required name="mobile_number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Mobile Number">
+<small id="emailHelp" class="form-text text-muted">Please Enter Your 10 Digit Phone Number </small>
+  </div>
+
+  <div class="form-group">
+      <label for="exampleInputPassword1"><b>Recharge Amount</b></label>
+    <input type="number" name="recharge_amount" class="form-control" id="exampleInputPassword1" placeholder="Enter Recharge Amount">
+  <small id="emailHelp" required class="form-text text-muted">Please Enter the recharge amount.</small>
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="col-sm-3">
+
+</div>
+
+</div>
+
+
+</body>
+</html>
